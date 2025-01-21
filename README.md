@@ -1,34 +1,35 @@
 # 🩺 Skin Disease Classification App
 
-This is an AI-powered **Skin Disease Classification App** that uses a **ResNet-50 v2** model to identify potential skin conditions from uploaded images. The app is hosted on **Streamlit** and connects to a remote API for real-time predictions.
+This AI-powered **Skin Disease Classification App** leverages a **ResNet-50 v2** model trained on a custom dataset to identify potential skin conditions from uploaded images. Hosted on **Streamlit**, the app connects to a **Hugging Face Space API** for real-time predictions.
 
 ## 🌟 Features
-- **Upload Images**: Easily upload skin images (JPG, JPEG, PNG) to classify potential skin diseases.
-- **AI-powered Predictions**: Uses a pre-trained **ResNet-50 v2** model to classify images into five categories:
+- **Image Upload**: Upload images (JPG, JPEG, PNG) of skin lesions for classification.
+- **AI-powered Predictions**: Classifies images into five categories:
   - Burn Skin
   - Healthy Skin
   - Malignant
   - Non-Cancerous
   - Non-Skin
-- **Real-time Results**: Displays the predicted disease name along with the confidence score.
-- **User-friendly Interface**: Powered by Streamlit, offering an intuitive and interactive experience.
+- **Real-time Results**: Displays the predicted disease category and confidence score.
+- **User-friendly Interface**: A responsive and intuitive UI built with Streamlit.
 
 ## 🚀 Live Demo
-You can access the app here: [Skin Disease Classification App](https://smart-healthcare.streamlit.app/)  
+Access the app here: [Skin Disease Classification App](https://smart-healthcare.streamlit.app/)  
 
-## 🛠️ Built With
-- **[Streamlit](https://streamlit.io/)**: For the web app interface.
-- **[ResNet-50 v2](https://arxiv.org/abs/1603.05027)**: A state-of-the-art deep learning model for image classification.
-- **[Hugging Face Space](https://huggingface.co/spaces)**: Hosting the pre-trained model as an API.
-- **[Python](https://www.python.org/)**: Backend logic and integration.
+## 🛠️ Technologies Used
+- **[Streamlit](https://streamlit.io/)**: Interactive web application framework.
+- **[ResNet-50 v2](https://arxiv.org/abs/1603.05027)**: Advanced deep learning model for image classification.
+- **[Hugging Face Spaces](https://huggingface.co/spaces)**: Model hosting for API integration.
+- **[Python](https://www.python.org/)**: Core language for development.
+- **[TensorFlow](https://www.tensorflow.org/)**: Training the ResNet-50 v2 model.
 
 ## 📋 How It Works
-1. **Upload**: Upload an image of the skin lesion or area of interest.
-2. **Processing**: The image is sent to a remote ResNet-50 v2 model API for analysis.
-3. **Results**: The app displays the predicted disease category and its confidence score.
+1. **Upload an Image**: Use the file uploader to provide a skin lesion image.
+2. **Remote Processing**: The uploaded image is sent to the hosted ResNet-50 v2 model API for analysis.
+3. **Prediction Results**: The app displays the classified disease and confidence score.
 
 ## 🖥️ Installation (For Local Use)
-To run the app locally, follow these steps:
+Follow these steps to set up the app locally:
 
 1. **Clone the Repository**:
    ```bash
@@ -52,28 +53,30 @@ To run the app locally, follow these steps:
    streamlit run Streamlit.py
    ```
 
-5. **Access the App**:
-   Open your browser and navigate to `http://localhost:8501`.
+5. **Open the App**:
+   Navigate to `http://localhost:8501` in your browser.
 
 ## 📂 Project Structure
 ```
 .
-├── Streamlit.py        # Main Streamlit application
-├── requirements.txt    # Python dependencies
-├── temp/               # Temporary folder for uploaded images
-├── README.md           # Project documentation
+├── Streamlit.py           # Main Streamlit application
+├── requirements.txt       # Dependencies
+├── utils\train_model.py   # Utility scripts (e.g., model training)
+├── temp/                  # Temporary folder for images
+├── README.md              # Project documentation
+└── data/                  # Dataset splits (train, validation, test)
 ```
 
 ## ⚠️ Disclaimer
-This app is for **educational purposes only** and should not be used for medical diagnosis or treatment. Always consult a certified medical professional for health-related concerns.
+This app is intended for **educational purposes only**. It is not a substitute for professional medical advice. Please consult a certified medical professional for accurate diagnosis and treatment.
 
 ## 📞 Contact
-For any queries or suggestions, feel free to reach out:
+For feedback or inquiries:
 - **Name**: Manish Borikar  
-- **Email**: manishborikar@proton.me  
+- **Email**: [manishborikar@proton.me](mailto:manishborikar@proton.me)  
 - **GitHub**: [manishborikar92](https://github.com/manishborikar92)
 
 ## 🏅 Acknowledgments
-- **Hugging Face** for hosting the ResNet-50 v2 model.
-- **Streamlit** for providing an excellent framework for interactive applications.
-- **ResNet-50 v2 Authors** for their contribution to deep learning research.
+- **Hugging Face** for providing the model hosting platform.
+- **Streamlit** for simplifying web app development.
+- **TensorFlow** for training the ResNet-50 v2 model.
