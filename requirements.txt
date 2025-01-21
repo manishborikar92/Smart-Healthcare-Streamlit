@@ -1,0 +1,6 @@
+streamlit
+gradio
+tensorflow
+numpy
+Pillow
+gradio_client
